@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Formulario</title>
+  <style type="text/css">
+    
+    *{
+       
+        margin: 0 auto;
+    }
+    body{
+        background-color:#303845 ;
+    }
+    header{
+        background-color: #303845;
+        color: white;
+        padding: 2rem;
+    }
+    .Container{
+        /*border: 1px solid;*/
+        width: 1000px;
+        background-color:#303845;
+        padding: 2rem;
+        align-items: center;
+    }
+    label {
+            font-size: 20px;
+           height: 20px;
+           color: #ffffff;
+            
+  
+    }
+    button{
+        padding: 2rem;
+        background-color: #192349 ;
+        color: white;
+        border-radius: 10px;
+        text-align: center;
+      
+    }
+    footer{
+        background-color:#3C4557;
+        color: white;
+        padding: 2rem;
+        text-align: center;
+    }    
+        label {
+            display: block;
+            margin: 15px 0 5px;
+
+            
+        }
+        ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      background-color:#3C4557;
+      align-items: center;
+      text-align: center;
+    }
+
+    li {
+      float: left;
+    }
+
+    li a, .dropbtn {
+      display: inline-block;
+      color: rgb(255, 255, 255);
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+    }
+
+    li a:hover, .dropdown:hover .dropbtn {
+      background-color:#3e485e;
+    }
+
+    li.dropdown {
+      display: inline-block;
+    }
+
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #60667C;
+      min-width: 160px;
+      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+      z-index: 1;
+    }
+
+    .dropdown-content a {
+      color: rgb(255, 255, 255);
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+      text-align: center;
+    }
+
+    .dropdown-content a:hover {background-color: #585e71}
+
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+    .center{
+      align-content: center;
+    }
+    fieldset{
+      color: white;
+    }
+    input{
+      width:400px ;
+      height:30px ;
+    }
+  </style><!--CSS-->
+
+
+  
+</head>
+<body>
+    <header>
+        <h1 style="text-align: center;"><img src="img/image-removebg-preview.png" alt="la imagen no carga  " width="500px" height="150px" ></h1>
+    </header>
+    
+    <ul class="center" style="text-align: center;">
+      <li><a href="#news"  style="font-size:25px;">INICIO</a></li>
+      <li><a href="#news"  style="font-size:25px;">SERVICIOS</a></li>
+      <li class="dropdown"><!--uso dde java para que el menu se despliegue-->
+        <a href="javascript:void(0)" class="dropbtn"  style="font-size:25px;" >NUESTRO TRABAJO </a><!--desplegable de los centros con su respentivo enlacce-->
+        <div class="dropdown-content">
+          <a href="PROGRAMAS">PROGRAMAS</a>
+          <a href="PRO">PROYECTOS</a>
+          <a href="ALI">ALIANZAS</a>
+      </div>
+      </li>
+      <li class="dropdown"><!--uso dde java para que el menu se despliegue-->
+        <a href="javascript:void(0)" class="dropbtn"  style="font-size:25px;" >INSTITUCIÓN </a><!--desplegable de los centros con su respentivo enlacce-->
+        <div class="dropdown-content">
+          <a href="PROGRAMAS">PROGRAMAS</a>
+          <a href="PRO">PROYECTOS</a>
+          <a href="ALI">ALIANZAS</a>
+    
+        </div>
+      </li>
+      <li class="dropdown"><!--uso dde java para que el menu se despliegue-->
+        <a href="javascript:void(0)" class="dropbtn"  style="font-size:25px;" >CONTACTENOS </a><!--desplegable de los centros con su respentivo enlacce-->
+        <div class="dropdown-content">
+          <a href="PROGRAMAS">PROGRAMAS</a>
+          <a href="PRO">PROYECTOS</a>
+          <a href="ALI">ALIANZAS</a>
+    
+        </div>
+      </li>
+  
+      <li><a href="#news"  style="font-size:25px;">CRECER JUNTOS</a></li>
+      <li><a href="#news"  style="font-size:25px;">EMPLEO </a></li>
+    </ul>
+    <br>
+    <br>
+    <h1 style="text-align: center; color: white; font-size: 80px;">Aplique ya</h1><br><br>
+
+  <div class="Container">
+  <form method="post" >
+    <fieldset >
+      <legend><h1>Datos personales</h1></legend>
+      <table cellspacing="50px">
+        
+        <tr>
+          <td >
+    <label for="nombres">Nombres:</label>
+    <input type="text" id="nombres" name="nombres" placeholder="Ingrese sus nombre, ej. Juan Maria" ><br><br>
+    
+    <label for="apellidos">Apellidos:</label>
+    <input type="text" id="apellidos" name="apellidos" placeholder="Ingrese sus apellidos, ej. Sorto Rodriguez"><br><br>
+    
+    <label for="fecha_nacimiento">Fecha de nacimiento:</label>
+    <input type="date" id="fecha_nacimiento" name="fecha_nacimiento"><br><br>
+    
+    <label for="sexo">Sexo:</label>
+    <select id="sexo" name="sexo">
+      <option value="masculino">Masculino</option>
+      <option value="femenino">Femenino</option>
+     
+    </select><br><br>
+
+    <label for="dui">DUI:</label>
+    <input type="text" id="dui" name="dui" placeholder="00000000-0"><br><br>
+  </td>
+  <td >
+    <label for="nit">NIT:</label>
+    <input type="text" id="nit" name="nit" placeholder="000 000 000"><br><br>
+    
+    <label for="telefono">Teléfono:</label>
+    <input type="tel" id="telefono" name="telefono" placeholder="0000-0000"><br><br>
+    
+    <label for="direccion">Dirección:</label>
+    <input type="text" id="direccion" name="direccion" placeholder="municipio, colonia,pasaje,numero casa"><br><br>
+    
+    <label for="email">E-Mail:</label>
+    <input type="email" id="email" name="email" placeholder="alguien@gmail.com"><br><br>
+  </td>
+    </tr>
+  </table>
+    </fieldset>
+  
+  
+  
+  
+    <fieldset >
+        <legend><h2>Formación Académica</h2></legend>
+    <label for="educacion_inicial">Educación Inicial:</label>
+    <input type="text" id="educacion_inicial" name="educacion_inicial"><br><br>
+    
+    <label for="educacion_secundaria">Educación Secundaria:</label>
+    <input type="text" id="educacion_secundaria" name="educacion_secundaria"><br><br>
+    
+    <label for="educacion_universitaria">Educación Universitaria:</label>
+    <input type="text" id="educacion_universitaria" name="educacion_universitaria"><br><br>
+    </fieldset>
+ 
+  
+  
+    <fieldset >
+        <legend><h2>Experiencia Profesional</h2></legend>
+    <label for="experiencia_profesional">Experiencia Profesional:</label><br>
+    <textarea id="experiencia_profesional" name="experiencia_profesional" rows="15px" cols="100px"></textarea><br><br>
+    </fieldset>
+    <button type="submit"><b>Enviar</b></button>
+  </form>
+  
+  
+  </div>
+  <footer><h3> ©todos los derechos reservados ISSS y Kateryn Rodriguez </h3></footer>
+
+
+</body>
+</html>
